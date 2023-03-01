@@ -1,18 +1,13 @@
-#!/bin/bash
-echo "n=?"
-read n
-for((i=2;i<n/2;i++))
+echo "Enter the number"
+read n 
+i=2
+while [ $i -le  $(($n/2)) ]
 do
-  if[ $((n%i)) -eq 0 ]
-  then
-    flag=1
-    break;
-  fi
-if[$((flag))==1]
-then
-  echo "$n is not prime no"
-else
-  echo "$n is a prime no"
-fi
+    if test `expr $n % $i` -eq 0
+    then 
+        echo "Not prime"
+        exit
+    fi
+    i=$(($i+1))
 done
-
+echo "prime"
