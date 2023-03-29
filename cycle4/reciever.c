@@ -21,4 +21,4 @@ int main(){
 
 // Key of the Shared Memory is 4882443
 // Process attached at 0x7effad1e0000
-// Data read from shared memory is: hello   
+// Data read from shared memory is: hello   0 
