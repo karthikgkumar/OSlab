@@ -1,3 +1,9 @@
+// ProcessNo       AT      BT      Pri     CT      TAT     WT
+// P1              0       5       4       7       7       2
+// P2              2       4       2       15      13      9
+// P3              2       2       6       4       2       0
+// P4              4       4       3       11      7       3
+
 #include<stdio.h>
 #define MIN -9999;
 struct proc
@@ -24,7 +30,7 @@ void main()
     int i,n,c,remaining,max_val,max_index;
     struct proc p[10],temp;
     float avgtat=0,avgwt=0;
-    printf("<--Highest Priority First Scheduling Algorithm (Preemptive)-->\n");
+    printf("Highest Priority(Preemptive)\n");
     printf("Enter Number of Processes: ");
     scanf("%d",&n);
     for(int i=0;i<n;i++)

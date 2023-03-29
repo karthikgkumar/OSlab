@@ -6,6 +6,20 @@ where the process with the shortest remaining burst time
 is selected for execution at each time step.
 */
 
+// Enter the number of processes: 4
+// Enter the arrival time and burst time for process 1: 0 3
+// Enter the arrival time and burst time for process 2: 1 6
+// Enter the arrival time and burst time for process 3: 4 4
+// Enter the arrival time and burst time for process 4: 6 2
+
+// Process Arrival Time    Burst Time      Turnaround Time Waiting Time
+// 1       0               3               3               0
+// 2       1               6               14              8
+// 3       4               4               4               0
+// 4       6               2               4               2
+// Average waiting time: 2.50
+// Average turnaround time: 6.25
+
 
 #include <stdio.h>
 #define Max 100
