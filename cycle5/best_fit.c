@@ -5,7 +5,7 @@ void implimentBestFit(int blockSize[], int blocks, int processSize[], int proces
     // This will store the block id of the allocated block to a process
     int allocation[processes];
     
-    // initially assigning -1 to all allocation indexes
+    // initially assigninhttps://kirka.io/games/ASIA~IDJKWzo8Mg -1 to all allocation indexes
     // means nothing is allocated currently
     for(int i = 0; i < processes; i++){
         allocation[i] = -1;
